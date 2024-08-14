@@ -1,0 +1,19 @@
+/* Footer.css */
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .7rem;
+    background-color: #333;
+    color: white;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+  
+  .footer p {
+    margin: 0;
+    font-size: 1vw; /* Adjust the font size as needed */
+  }
+  

@@ -1,0 +1,113 @@
+/* JournalForm.css */
+.journal-form {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 5%;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-sizing: border-box;
+  }
+  
+  .journal-form div {
+    margin-bottom: 5%;
+  }
+  
+  .journal-form label {
+    display: block;
+    margin-bottom: 1%;
+    font-weight: bold;
+  }
+  
+  .journal-form input,
+  .journal-form textarea {
+    width: 100%;
+    padding: 2%;
+    box-sizing: border-box;
+  }
+  
+  .journal-form button {
+    padding: 2%;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .journal-form button:hover {
+    background-color: #0056b3;
+  }
+  
+  .journal-entries {
+    width: 80%;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 5%;
+    box-sizing: border-box;
+  }
+  
+  .journal-entry {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .journal-entry h3 {
+    margin: 0;
+  }
+  
+  .journal-entry p {
+    margin: 5px 0;
+  }
+  
+  .journal-entry small {
+    color: #666;
+  }
+  
+  .search-results {
+    margin-top: 1rem;
+  }
+  /* Styling for search results */
+  .search-result {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  /* Styling dynamic movie suggestions drop down list */
+  .suggestions-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    max-height: 200px; /* Limit the height of the suggestions list */
+    overflow-y: auto; /* Enable vertical scrolling if necessary */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    position: absolute;
+    z-index: 1000;
+  }
+  
+  .suggestions-list li {
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .suggestions-list li:hover {
+    background-color: #f0f0f0;
+  }
+
+  .auto-resize-textarea {
+    width: 100%; /* Full width */
+    min-height: 100px; /* Initial height */
+    resize: none; /* Prevent manual resizing */
+    overflow: hidden; /* Hide the scroll bar */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    padding: 10px; /* Add some padding */
+    font-size: 1rem; /* Adjust the font size */
+  }

@@ -1,0 +1,101 @@
+/* Ensure body and html cover the entire viewport */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.App {
+  position: relative; /* Relative positioning for containing absolute children */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.anim_gradient {
+  background: linear-gradient(90deg, #0062ff, #da61ff);
+  background-size: 400% 400%;
+  animation: gradient_anim 23s ease infinite;
+  position: fixed; /* Fix the position to the viewport */
+  top: 0;
+  left: 0;
+  height: 100vh; /* Full height of the viewport */
+  width: 100vw; /* Full width of the viewport */
+  z-index: -1; /* Place it behind other elements */
+}
+
+@keyframes gradient_anim {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+header {
+  display: flex; /* Use flexbox to align items */
+  align-items: center; /* Center items vertically */
+  justify-content: space-between; /* Space out items horizontally */
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  padding: 1rem;
+  width: 100%;
+  color: white;
+  flex-shrink: 0; /* Prevent the header from shrinking */
+}
+
+header img {
+  height: 50px; /* Adjust height as needed */
+  width: auto; /* Maintain aspect ratio */
+}
+
+header button {
+  padding: 10px 20px;
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+header button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+.main-content {
+  flex-grow: 1; /* Allow the main content to grow and take available space */
+  overflow-y: auto; /* Enable vertical scrolling */
+  width: 100%;
+  padding: 1rem;
+}
+
+.centered-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+section {
+  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+  padding: 2rem;
+  border-radius: 1rem;
+  margin-bottom: 1rem; /* Space between sections */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  margin-top: 1rem;
+}
+
+h1, h2 {
+  margin: 20px 0; /* Add some margin for spacing */
+}
